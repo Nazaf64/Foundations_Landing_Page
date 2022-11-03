@@ -12,57 +12,80 @@
 </head>
 <body>
     <header>
-        <h1 class="header-logo">Header Logo</h1>
+        <div id="header-container">
+            <h1 class="header-logo">Header Logo</h1>
         <ul>
             <li><a class="header-link-text" href="">header link one</a></li>
-            <li><a class="header-link-text" href="">header link one</a></li>
-            <li><a class="header-link-text" href="">header link one</a></li>
+            <li><a class="header-link-text" href="">header link two</a></li>
+            <li><a class="header-link-text" href="">header link three</a></li>
         </ul>
+        </div>
+        
     </header>
 
     <main>
-        <h1>This website is awesome</h1>
-        <p class="sub-header">This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast.</p>
-        <button id="top-signup-button">Sign up</button>
-        <img id="main-image" src="images/ovidio-soto-unsplash.jpg" alt="this is a placeholder for an image by ovidio-soto-unsplash">
+        <div id="main-container">
+            <div class="main-text">
+                <h1>This website is awesome</h1>
+                <p class="sub-header">This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast.</p>
+                <button id="top-signup-button">Sign up</button>
+            </div>
+            <img id="main-section-image" src="images/ovidio-soto-unsplash.jpg" alt="this is a placeholder for an image by ovidio-soto-unsplash">
+        </div>
+        
     </main>
 
-    <section>
-        <h2>Some Random Information</h2>
+    <section id="random-info-section">
+        <div id="random-info-container">
+            <h2 id="some-random-information">Some Random Information</h2>
 
-        <div>
-            <img class="illustration" src="images/mathilde-langevin-unsplash.jpg" alt="">
-            <p>this is some subtext under an illustration</p>
-        </div>
-
-        <div>
-            <img class="illustration" src="images/mathilde-langevin-unsplash.jpg" alt="mathilde-langevin-unsplash">
-            <p>this is some subtext under an illustration</p>
-        </div>
-
-        <div>
-            <img class="illustration" src="images/mathilde-langevin-unsplash.jpg" alt="">
-            <p>this is some subtext under an illustration</p>
-        </div>
-
-        <div>
-            <img class="illustration" src="images/mathilde-langevin-unsplash.jpg" alt="">
-            <p>this is some subtext under an illustration</p>
-        </div>
+            <div id="frames">
+                <div class="frame-container">
+                    <img class="illustration" src="images/mathilde-langevin-unsplash.jpg" alt="">
+                    <p>this is some subtext under an illustration</p>
+                </div>
+        
+                <div>
+                    <img class="illustration" src="images/mathilde-langevin-unsplash.jpg" alt="mathilde-langevin-unsplash">
+                    <p>this is some subtext under an illustration</p>
+                </div>
+        
+                <div>
+                    <img class="illustration" src="images/mathilde-langevin-unsplash.jpg" alt="">
+                    <p>this is some subtext under an illustration</p>
+                </div>
+        
+                <div>
+                    <img class="illustration" src="images/mathilde-langevin-unsplash.jpg" alt="">
+                    <p>this is some subtext under an illustration</p>
+                </div>
+            </div>            
+        </div>        
     </section>
 
-    <section>
-        <blockquote>This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</blockquote>
-        <p><b>-Thor, son of Odin</b></p>
+    <section id="quote-section">
+        <div id="quote-container">
+            <blockquote id="quote">This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</blockquote>
+            <p><b>-Thor, son of Odin</b></p>
+        </div>        
     </section>
 
-    <section>
-        <h2>Call to action! It's time!</h2>
-        <p>Sign up for our product by clicking that button right over there!</p>
-
-        <button>Sign up</button>
+    <section id="call-to-action-section">
+        <div id="call-to-action-container">
+            <div class="call-to-action-text">
+                <h2>Call to action! It's time!</h2>
+                <p>Sign up for our product by clicking that button right over there!</p>
+            </div>
+            
+    
+            <button>Sign up</button>
+        </div>        
     </section>
 
-    <footer><p>Copyright &copy The Odin Project 2022</p></footer>
+    <footer>
+        <div id="footer-container">
+            <p>Copyright &copy The Odin Project 2022</p>
+        </div>        
+    </footer>
 </body>
 </html>

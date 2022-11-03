@@ -2,10 +2,64 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+}
+
+header {
+    padding-top: 1rem;
+}
+
+main {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.main-text {
+    margin-right: 3rem;
+    justify-items: flex-start;
+}
+
+p.sub-header {
+    margin-top: 1rem;
+}
+
+
+#header-container,
+#main-container,
+#random-info-container,
+#quote-container,
+#call-to-action-container,
+#footer-container,
+#frames {
+    max-width: 70%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#header-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+ul {
+    display: flex;
+}
+
+ul li a.header-link-text {
+    margin-left: 1rem;
 }
 
 header, main, footer {
     background-color: #1F2937;
+    width: 100%;
 }
 
 header h1.header-logo, main {
@@ -23,19 +77,51 @@ main p.sub-header {
     text-decoration: none;
 }
 
+header ul li {
+    list-style: none;
+}
+
+.main-container {
+    height: 195px;
+    /* justify-content: space-between; */
+}
+
 main h1{
     font-weight: 900;
 }
 
-main img
+main img#main-section-image{
+    max-height: 195px;
+    height: auto;
+}
 
-button#top-signup-button {
+button#top-signup-button,
+#call-to-action-container button
+ {
     background-color: #3882F6;
     color: #E5E7EB;
     border-radius: 8px;
     font-size: 0.8rem;
     font-weight: bold;
     padding: 0.5rem 1.5rem;
+}
+
+button#top-signup-button {
+    border: none;
+    margin-top: 1rem;
+}
+
+#random-info-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#some-random-information{
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 900;
+    flex-direction: column;
 }
 
 img.illustration {
@@ -45,10 +131,35 @@ img.illustration {
     border-radius: 8px;
 }
 
+section#quote-section {
+    background-color: #E5E7EB;
+}
 
+section#quote-section blockquote#quote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+}
 
+#quote-container{
+    flex-direction: column;
+}
 
+section#call-to-action-section {
+    /* background: #3882F6; */
+    width: 100%;
+}
 
+#call-to-action-container {
+    color: white;
+    justify-content: space-around;
+    background: #3882F6;
+    /* width: 90%; */
+}
+
+#call-to-action-container button {
+    border: 2px solid white;
+}
 
 footer {
     color: #F9FAF8;
