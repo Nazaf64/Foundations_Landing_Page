@@ -131,6 +131,7 @@ button#top-signup-button {
     margin: 0 auto;
     margin-top: 2rem;
     width: 100%;
+    justify-content: center;
 }
 
 .frame-container {
@@ -149,6 +150,7 @@ img.illustration {
 
 .illustration-caption{
     font-size: 0.9rem;
+    width: 80%;
 }
 
 section#quote-section {
